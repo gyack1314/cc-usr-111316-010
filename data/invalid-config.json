@@ -1,0 +1,42 @@
+{
+  "kind": "variance-game",
+  "variables": [
+    "fuel-log",
+    "factor-log"
+  ],
+  "mean": [
+    "0",
+    "0"
+  ],
+  "covariance": [
+    [
+      "1",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "1"
+    ]
+  ],
+  "output_function": {
+    "name": "linear",
+    "coefficients": [
+      "1",
+      "1"
+    ],
+    "constant": "0"
+  },
+  "transforms": [
+    "identity",
+    "identity"
+  ],
+  "sampler": {
+    "seed": 90210,
+    "replicates": 16,
+    "outer": 128,
+    "inner": 0,
+    "permutations": 64
+  },
+  "psd_tolerance": "1/10000000000",
+  "minimum_variance": "1/1000000000000"
+}
